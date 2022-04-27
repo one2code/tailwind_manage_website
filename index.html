@@ -10,12 +10,15 @@
 	<body>
 		<!--Navbar-->
 		<nav class="relative container mx-auto p-6">
+
 			<!--Fkex Container-->
 			<div class="flex items-center justify-between">
+
 				<!--Logo-->
 				<div class="pt-2">
 					<img src="img/logo.svg" alt="manage logo" />
 				</div>
+
 				<!--Menu Items-->
 				<div class="hidden space-x-6 md:flex">
 					<a class="hover:text-darkGrayishBlue" href="#">Pricing</a>
@@ -24,22 +27,27 @@
 					<a class="hover:text-darkGrayishBlue" href="#">Careers</a>
 					<a class="hover:text-darkGrayishBlue" href="#">Community</a>
 				</div>
+
 				<!--Get Started Button in the Navbar-->
-				<a
+				<button class = "hidden md:block p-3 px-6 pt-2 bg-brightRed shadow-md shadow-brightRedLight rounded-full baseline  hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140">
+					<a
 					href="#"
-					class="hidden md:block p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140"
+					class= 'text-white '
 					>Get Started</a
 				>
+				</button>
+				
 				<!--Hamburger Icon-->
 				<button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
 					<span class="hamburger-top"></span>
-					<span class="hamburger-top"></span>
-					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
 				</button>
 			</div>
+
 			<!--Mobile Menu-->
 			<div class="md:hidden">
-				<div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+				<div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
 					<a href="">Pricing</a>
 					<a href="">Product</a>
 					<a href="">About Us</a>
@@ -48,6 +56,7 @@
 				</div>
 			</div>
 		</nav>
+
 		<!--Hero Section-->
 		<section id="hero">
 			<!--Flex Container-->
@@ -66,11 +75,11 @@
 						while keeping the larger team goals in view.
 					</p>
 					<div class="flex justify-center md:justify-start">
-						<a
-							href="#"
-							class="p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140""
-							>Get Started</a
-						>
+						<!--Hero Section Get Started Button-->
+						<button class = "p-3 px-6 pt-2 bg-brightRed shadow-md shadow-brightRedLight rounded-full baseline hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140">
+							<a href="#" class="text-white">Get Started</a>
+						</button>
+						
 					</div>
 				</div>
 				<!--Image-->
@@ -222,13 +231,12 @@
 						</p>
 					</div>
 				</div>
-				<!--Button-->
+				<!--Testimonial Get Started Button-->
 				<div class="my-16">
-					<a
-							href="#"
-							class="p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140""
-							>Get Started</a
-						>
+					<button class = 'p-3 px-6 pt-2 bg-brightRed shadow-md shadow-brightRedLight rounded-full baseline hover:bg-brightRedLight hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140' >
+						<a href="#" class="text-white">Get Started</a>
+					</button>
+					
 				</div>
 			</div>
 		</section>
@@ -242,13 +250,13 @@
 				<h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
 					Simplify how your team works today
 				</h2>
-				<!--Button-->
+				<!--Call to Action Get Started Button-->
 
 				<div>
-					<a
-					href="#"
-					class="hidden md:block p-3 px-6 pt-2 bg-white text-brightRed rounded-full baseline shadow-2xl hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140 hover:bg-gray-300">
-					Get Started</a>
+					<button class = "hidden md:block p-3 px-6 pt-2 bg-white text-brightRed rounded-full baseline shadow-2xl hover:ease-in-out delay-270 hover:-translate-y-1 hover:scale-140 hover:bg-gray-300">
+					<a href="#"class="text-brightRed">Get Started</a>
+					</button>
+					
 				</div>
 				
 			</div>
@@ -331,5 +339,6 @@
 		  </div>
 		</div>
 	  </footer>
+	  <script src="js/script.js"></script>
 	</body>
 </html>
